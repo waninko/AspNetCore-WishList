@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 
 namespace WishList.Controllers
 {
@@ -10,12 +11,12 @@ namespace WishList.Controllers
     {
         public IActionResult Index()
         {
-            return Index();
+            return View();
         }
 
         public IActionResult Error()
         {
-            return Error();
+            return View();
         }
     }
 }
