@@ -1,4 +1,8 @@
-﻿@Model WishList.Models.Item
-@{
+﻿@model WishList.Models.Item
 
-}
+<h1>WishList</h1>
+<a asp-action="create">Add Item</a>
+
+<ul foreach="Item in @Model">
+    <li>Item.Description <a asp-action="delete" asp-route-id="Item.Id">Delete</a></li>
+</ul>
